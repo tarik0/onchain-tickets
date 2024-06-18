@@ -1,0 +1,50 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.20.0",
+    "hardhat-gas-reporter": "^1.0.10"
+  },
+  "dependencies": {
+    "@api3/airnode-abi": "^0.14.1",
+    "@api3/airnode-admin": "^0.14.0",
+    "@api3/airnode-protocol": "^0.14.0",
+    "@nomicfoundation/edr-darwin-arm64": "^0.3.2",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@quant-finance/solidity-datetime": "^2.2.0",
+    "@uniswap/v3-core": "^1.0.0",
+    "@uniswap/v3-periphery": "^1.0.1",
+    "compile": "^0.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat-tracer": "^2.8.1"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test --v",
+    "test-verbose": "npx hardhat test --show-stack-traces --vv",
+    "deploy-testnet": "npx hardhat run scripts/deploy.ts --network testnet",
+    "initialize-testnet": "npx hardhat run scripts/initialize.ts --network testnet",
+    "start-trading-testnet": "npx hardhat run scripts/start-trade.ts --network testnet",
+    "add-liquidity-testnet": "npx hardhat run scripts/utils/add-liquidity.ts --network testnet",
+    "buy-tokens-testnet": "npx hardhat run scripts/utils/buy-tokens.ts --network testnet",
+    "sell-tokens-testnet": "npx hardhat run scripts/utils/sell-tokens.ts --network testnet",
+    "increase-prize-testnet": "npx hardhat run scripts/utils/increase-prize.ts --network testnet",
+    "deploy-requester-testnet": "npx hardhat run scripts/utils/deploy-requester.ts --network testnet",
+    "token-details-testnet": "npx hardhat run scripts/utils/token-details.ts --network testnet",
+    "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet",
+    "initialize-mainnet": "npx hardhat run scripts/initialize.ts --network mainnet",
+    "start-trading-mainnet": "npx hardhat run scripts/start-trade.ts --network mainnet",
+    "add-liquidity-mainnet": "npx hardhat run scripts/utils/add-liquidity.ts --network mainnet",
+    "buy-tokens-mainnet": "npx hardhat run scripts/utils/buy-tokens.ts --network mainnet",
+    "sell-tokens-mainnet": "npx hardhat run scripts/utils/sell-tokens.ts --network mainnet",
+    "increase-prize-mainnet": "npx hardhat run scripts/utils/increase-prize.ts --network mainnet",
+    "deploy-requester-mainnet": "npx hardhat run scripts/utils/deploy-requester.ts --network mainnet",
+    "token-details-mainnet": "npx hardhat run scripts/utils/token-details.ts --network mainnet",
+    "rescue-tokens-mainnet": "npx hardhat run scripts/utils/rescue-tokens.ts --network mainnet",
+    "rescue-tokens-testnet": "npx hardhat run scripts/utils/rescue-tokens.ts --network testnet",
+    "exclude-from-tax-mainnet": "npx hardhat run scripts/utils/exclude-from-tax.ts --network mainnet",
+    "sync-mainnet": "npx hardhat run scripts/utils/sync.ts --network mainnet",
+    "deploy-rescue-mainnet": "npx hardhat run scripts/utils/deploy-rescue-airnode.ts --network mainnet"
+  }
+}
